@@ -1,32 +1,34 @@
 {
-  "name": "rungeon",
-  "version": "1.1.0",
-  "description": "Rungeon is a minimal, open source, text-based adventure game.",
-  "main": "server.js",
+  "name": "rungeon-next",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "nodemon .",
-    "lint": "eslint .",
-    "lint-fix": "eslint . --fix",
-    "format": "npx prettier --write ."
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/devkennyy/rungeon.git"
-  },
-  "author": "devkennyy",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/devkennyy/rungeon/issues"
-  },
-  "homepage": "https://github.com/devkennyy/rungeon#readme",
   "dependencies": {
-    "ejs": "^3.1.8",
-    "express": "^4.18.1"
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@hookform/resolvers": "^2.9.7",
+    "axios": "^0.27.2",
+    "dashify": "^2.0.0",
+    "express-jwt": "^7.7.5",
+    "firebase": "^9.9.2",
+    "firebase-admin": "^11.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "next": "12.2.5",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.34.1",
+    "rxjs": "^7.5.6",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
-    "eslint": "^8.20.0",
-    "eslint-config-prettier": "^8.5.0",
-    "nodemon": "^2.0.19",
-    "prettier": "2.7.1"
+    "eslint": "8.21.0",
+    "eslint-config-next": "12.2.5"
   }
 }
